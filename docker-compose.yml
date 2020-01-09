@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+
+  apache:
+    build: apache2/
+    hostname: php
+    container_name: appserver
+    restart: always
+    ports:
+      - ${APACHE_HOST_HTTP_PORT}:8080
+      - ${APACHE_HOST_HTTPS_PORT}:443
+    volumes:
+      - ${APP_CODE_PATH_HOST}:/var/www/html/public
+      - ${DOWNLOAD_PATH_HOST}:/var/dowload 
+    depends_on:
+      - mysqldb
+    links:
+      - mysqldb
+
+
+  mysqldb:
+    container_name: myserver
+    hostname: msql
+    image: mysql:5.6
+    restart: always
+    ports:
+      - '3306:3306'
+    volumes:
+      - ${DATA_PATH_HOST}:/var/lib/mysql 
+      - ${DOWNLOAD_PATH_HOST}:/var/dowload   
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=app_development
+
+  
+  phpma:
+    container_name: pmaserver
+    image: phpmyadmin/phpmyadmin:latest
+    hostname: phpma
+    links:
+      - mysqldb
+    ports:
+      - 81:80
+    environment:
+      - PMA_ARBITRARY=1  
