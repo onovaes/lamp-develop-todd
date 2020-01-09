@@ -5,9 +5,9 @@
 
 ### Instalação
 - <code>git clone git@github.com:onovaes/lamp5.6-varnish.git</code>
-- <code>$cd lamp5.6-varnish</code>
-- <code>$cp env-example .env</code>
-- <code>$docker-compose up</code>
+- <code>cd lamp5.6-varnish</code>
+- <code>cp env-example .env</code>
+- <code>docker-compose up</code>
 
 ## Subindo os containers (START)
 $git clone git@github.com:onovaes/lamp7.2-laravel6.git
