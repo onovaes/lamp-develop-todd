@@ -41,13 +41,11 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set locales
-RUN locale-gen en_US.UTF-8 en_GB.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fr_FR.UTF-8 it_IT.UTF-8 km_KH sv_SE.UTF-8 fi_FI.UTF-8
+RUN locale-gen en_US.UTF-8
 
 # Configure PHP for php-laravel.ini
 COPY php.ini /etc/php/7.2/apache2/php.ini
 RUN a2enmod rewrite 
-#RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/servername.conf
-#RUN a2enconf servername
 
 # Configure vhost for site
 COPY site.conf /etc/apache2/sites-available/
@@ -67,4 +65,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer global require laravel/installer
 ENV PATH="~/.composer/vendor/bin:$PATH"
 
+#STARTA O APACHE
 CMD apachectl -D FOREGROUND 
