@@ -22,10 +22,15 @@ $docker-compose up
 
 | CONTAINER NAME | HOST/PORT          | OBS                                                         |
 | -------------- | ------------------ | ----------------------------------------------------------- |
-| phpserver      | localhost	      | Ubuntu 16.04.6 LTS - Apache 2.4.18 + PHP 7.2                |
+| appserver      | localhost	      | Ubuntu 16.04.6 LTS - Apache 2.4.18 + PHP 7.2                |
 | mysqldb        | mysqlserver:3306   | mysql 5.6.46                                                |
 | phpmyadmin     | localhost:81       |                                                             |
 
 
+
+## Comandos auxiliares
+
+#Entrando no container (appserver) para comecar a programar
+$docker exec -ti appserver bash
 
 
