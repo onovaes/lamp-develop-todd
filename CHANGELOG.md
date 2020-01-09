@@ -1,4 +1,3 @@
-
 #### v1.2.2 `May 20, 2019`
 
 - **[BUGFIX]** remove unneeded www-data user permission fix ([54179f3](https://github.com/t3kit/ubuntu18.04-php7.2-apache/commit/54179f3))
