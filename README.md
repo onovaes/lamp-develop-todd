@@ -6,16 +6,10 @@
 - Autor: Gabriel Novaes <gabriel@dothcom.net>
 
 ### Instalação
-- <code>git clone git@github.com:onovaes/lamp5.6-varnish.git</code>
-- <code>cd lamp5.6-varnish</code>
+- <code>git clone git@github.com:onovaes/lamp7.2-laravel6.git</code>
+- <code>cd lamp7.2-laravel6</code>
 - <code>cp env-example .env</code>
 - <code>docker-compose up</code>
-
-## Subindo os containers (START)
-$git clone git@github.com:onovaes/lamp7.2-laravel6.git
-$cd lamp7.2-laravel6
-$cp env-example .env
-$docker-compose up
 
 ## Subindo os containers (START)
 - APACHE_LOG_DIR
