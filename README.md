@@ -11,7 +11,7 @@
 - <code>cp env-example .env</code>
 - <code>docker-compose up</code>
 
-## Subindo os containers (START)
+## TO-DO
 - APACHE_LOG_DIR
 
 ### Informações Gerais
