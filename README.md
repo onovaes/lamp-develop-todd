@@ -15,6 +15,9 @@ $cd lamp7.2-laravel6
 $cp env-example .env
 $docker-compose up
 
+## Subindo os containers (START)
+- APACHE_LOG_DIR
+
 ### Informações Gerais
 
 | CONTAINER NAME | HOST/PORT          | OBS                                                         |
