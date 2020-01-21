@@ -12,7 +12,11 @@
 - <code>docker-compose up</code>
 
 ## TO-DO
+- senha esta saindo como 000
 - APACHE_LOG_DIR
+- meu host do mysql esta mysqlserver e deve ser myserver
+
+
 
 ### Informações Gerais
 
