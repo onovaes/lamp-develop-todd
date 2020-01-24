@@ -43,7 +43,7 @@ RUN apt-get update && apt-get install -y \
 # Set locales
 RUN locale-gen en_US.UTF-8
 
-# Configure PHP for php-laravel.ini
+# Configure PHP
 COPY php.ini /etc/php/7.2/apache2/php.ini
 RUN a2enmod rewrite 
 
@@ -60,9 +60,8 @@ RUN rm index.html
 
 #HEALTHCHECK --interval=5s --timeout=3s --retries=3 CMD curl -f http://localhost || exit 1
 
-# Install composer AND Laravel
+# Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer global require laravel/installer
 ENV PATH="~/.composer/vendor/bin:$PATH"
 
 #STARTA O APACHE

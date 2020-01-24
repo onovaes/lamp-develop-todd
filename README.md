@@ -1,8 +1,7 @@
-## LAMP para Desenvolvimento com Laravel 6.6 ou Codeigniter 3.1 baseado no docker 
+## LAMP para Desenvolvimento com Codeigniter 3.1 baseado no docker 
 
 - Ubuntu 16 + APACHE 2.4 + PHP 7.2. + MYSQL 5.6.46 
 - Composer version 1.9.1
-- Laravel Framework 6.6.2
 - Autor: Gabriel Novaes <semproblema@gmail.com>
 
 ### Instalação

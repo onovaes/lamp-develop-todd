@@ -5,7 +5,7 @@
 ### Paths #################################################
 
 # Path com os scripts da sua aplicação. Uma pasta antes da public_html
-APP_CODE_PATH_HOST=~/Documents/Sites/laravel6/
+APP_CODE_PATH_HOST=~/Documents/Sites/projeto_api/
 
 # Escolha o caminho de armazenamento em sua máquina. 
 DATA_PATH_HOST=~/Documents/mysql-data
