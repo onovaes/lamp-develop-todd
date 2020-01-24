@@ -1,18 +1,18 @@
-## LAMP para Desenvolvimento com Laravel 6.6 baseado no docker 
+## LAMP para Desenvolvimento com Laravel 6.6 ou Codeigniter 3.1 baseado no docker 
 
 - Ubuntu 16 + APACHE 2.4 + PHP 7.2. + MYSQL 5.6.46 
 - Composer version 1.9.1
 - Laravel Framework 6.6.2
-- Autor: Gabriel Novaes <gabriel@dothcom.net>
+- Autor: Gabriel Novaes <semproblema@gmail.com>
 
 ### Instalação
-- <code>git clone git@github.com:onovaes/lamp7.2-laravel6.git</code>
-- <code>cd lamp7.2-laravel6</code>
+- <code>git clone git@github.com:onovaes/lamp-develop-todd.git</code>
+- <code>cd lamp-develop-todd</code>
 - <code>cp env-example .env</code>
 - <code>docker-compose up</code>
 
 ## TO-DO
-- senha esta saindo como 000
+- Senha do MYSQL esta saindo como 000???
 - APACHE_LOG_DIR
 - meu host do mysql esta mysqlserver e deve ser myserver
 
